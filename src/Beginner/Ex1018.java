@@ -10,9 +10,9 @@ public class Ex1018 {
         System.out.println(i);
         List<Integer> list  = new ArrayList<>(List.of(100, 50, 20, 10, 5, 2, 1));
 
-        for(int j =0; j < list.size(); j++){
-            System.out.printf("%d nota(s) de R$ %d,00\n", i/list.get(j),list.get(j));
-            i = i % list.get(j);
+        for (Integer integer : list) {
+            System.out.printf("%d nota(s) de R$ %d,00\n", i / integer, integer);
+            i = i % integer;
         }
     }
 }
